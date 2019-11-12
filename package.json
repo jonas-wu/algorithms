@@ -1,0 +1,8 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jonas-wu/algorithms.git",
+  "author": "吴玉众 <yuzhong.wu@ucarinc.com>",
+  "license": "MIT"
+}
