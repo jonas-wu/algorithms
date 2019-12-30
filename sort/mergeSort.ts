@@ -1,6 +1,6 @@
-const {randomArray} = require('../utils')
+import { randomArray } from "../utils";
 
-function merge(arr) {
+function merge(arr: number[]): number[] {
   // console.log('merge', arr.join(', '))
   if (arr.length < 2) return arr;
 
@@ -11,18 +11,18 @@ function merge(arr) {
   return mergeSort(merge(left), merge(right))
 }
 
-function mergeSort(left, right) {
+function mergeSort(left: number[], right: number[]): number[] {
   // console.log('mergeSort', left.join(', '), right.join(', '))
-  const result = [];
+  const result:number[] = [];
 
   while (left.length && right.length) {
-    if (left[0] <= right[0]) result.push(left.shift());
-    else result.push(right.shift());
+    if (left[0] <= right[0]) result.push(left.shift() as number);
+    else result.push(right.shift() as number);
   }
 
-  result.push(...left, ...right)
+  result.push(...left, ...right);
 
-  return result
+  return result;
 }
 
 const arr = randomArray(10)

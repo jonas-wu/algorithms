@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:jonas-wu/algorithms.git",
   "author": "吴玉众 <yuzhong.wu@ucarinc.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^13.1.1"
+  }
 }

@@ -41,7 +41,7 @@ Breadth First Search
 
 ![bubble sort](./sort/img/bubble-sort.gif)
 
-[bubbleSort.js](././sort/bubbleSort.js)
+[bubbleSort.ts](././sort/bubbleSort.ts)
 
 ### 选择排序(selection sort)
 
@@ -55,7 +55,7 @@ n个记录的直接选择排序可经过n-1趟直接选择排序得到有序结�
 
 ![selection sort](./sort/img/selection-sort.gif)
 
-[selectionSort.js](././sort/selectionSort.js)
+[selectionSort.ts](././sort/selectionSort.ts)
 
 ### 插入排序(insertion sort)
 
@@ -72,7 +72,7 @@ n个记录的直接选择排序可经过n-1趟直接选择排序得到有序结�
 
 ![insertion sort](./sort/img/insertion-sort.gif)
 
-[insertionSort.js](././sort/insertionSort.js)
+[insertionSort.ts](././sort/insertionSort.ts)
 
 ### 归并排序(merge sort)
 
@@ -84,4 +84,16 @@ n个记录的直接选择排序可经过n-1趟直接选择排序得到有序结�
 
 ![merge sort](./sort/img/merge-sort.gif)
 
-[mergeSort.js](././sort/mergeSort.js)
+[mergeSort.ts](././sort/mergeSort.ts)
+
+### 快速排序(quick sort)
+
+快速排序使用分治法来把一个串（list）分为两个子串（sub-lists）
+
+* 从数列中挑出一个元素，称为 “基准”（pivot）；
+* 重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；
+* 递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序。
+
+![quick sort](./sort/img/quick-sort.gif)
+
+[quickSort.ts](././sort/quickSort.ts)

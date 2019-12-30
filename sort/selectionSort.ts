@@ -1,12 +1,11 @@
-const {randomArray} = require('../utils')
+import { randomArray } from "../utils";
 
-function selectionSort(arr) {
+function selectionSort(arr: number[]): void {
   for (let j = 0; j < arr.length - 1; j++) {
     let minIndex = j
     for (let i = minIndex + 1; i < arr.length; i++) {
       if (arr[i] < arr[minIndex]) {
         minIndex = i;
-        min = arr[i]
       }
     }
 

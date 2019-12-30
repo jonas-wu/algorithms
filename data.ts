@@ -1,4 +1,10 @@
-const dfsData = [{
+export interface Node {
+  id: number;
+  children?: Node[];
+  path?: string;
+}
+
+const dfsData: Node[] = [{
   id: 1,
   children: [{
     id: 11,
@@ -19,8 +25,6 @@ const dfsData = [{
     }, {
       id: 22,
     }]
-}]
+},];
 
-module.exports = {
-  dfs: dfsData,
-}
+export {dfsData as dfs}

@@ -1,6 +1,6 @@
-const {randomArray} = require('../utils')
+import { randomArray } from "../utils";
 
-function bubbleSort(arr) {
+function bubbleSort(arr: number[]) {
   for (let j = 0; j < arr.length - 1; j++) {
     for (let i = 0; i < arr.length - j - 1; i++) {
       if (arr[i] > arr[i+1]) {

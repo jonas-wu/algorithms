@@ -1,6 +1,6 @@
-const {randomArray} = require('../utils')
+import { randomArray } from "../utils";
 
-function insertionSort(arr) {
+function insertionSort(arr: number[]) {
   for (let i = 1; i < arr.length; i++) {
     const cur = arr[i]
     let preIndex = i - 1

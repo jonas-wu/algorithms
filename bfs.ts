@@ -1,12 +1,11 @@
 // 广度优先查找
+import { dfs as arr, Node } from './data'
 
-const arr = require('./data').dfs
-
-function bfs(arr, targetId) {
+function bfs(arr: Node[], targetId: number) {
   const queue = [...arr]
 
   while (queue.length) {
-    const cur = queue.shift()
+    const cur = queue.shift() as Node
     console.log(cur.id)
     if (cur.id === targetId) {
       return cur
