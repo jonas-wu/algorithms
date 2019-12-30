@@ -6,13 +6,13 @@
 
 Depth First Search
 
-[dfs.js](./dfs.js)
+[dfs.ts](./dfs.ts)
 
 ## 广度优先查找(BFS)
 
 Breadth First Search
 
-[bfs.js](./bfs.js)
+[bfs.ts](./bfs.ts)
 
 ## 防抖动、节流(debounce throttle)
 
