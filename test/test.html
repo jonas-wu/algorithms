@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input id="input"/>
+  <div style="width: 300px; height: 100px;border: 1px solid gray;overflow: auto; display: flex;">
+    <div>afefefeddddddddddddddddddddddddddd</div>
+    <div>afefefeddddddddddddddddddddddddddd</div>
+    <div>afefefeddddddddddddddddddddddddddd</div>
+    <div>afefefeddddddddddddddddddddddddddd</div>
+    <div>afefefeddddddddddddddddddddddddddd</div>
+  </div>
+  <script>
+    function debounce(fn, ms) {
+      let timer;
+
+      return (...args) => {
+        if (timer) {
+          clearTimeout(timer)
+        }
+
+        timer = setTimeout(() => {
+          fn(args[0]);
+          timer = null;
+        }, ms);
+      }
+    }
+
+    function throttle(fn, ms) {
+      let timer;
+
+      return (...args) => {
+        if (timer) {
+          return;
+        }
+
+        timer = setTimeout(() => {
+          fn(args[0]);
+          timer = null;
+        }, ms);
+      }
+    }
+
+    document.getElementById('input').addEventListener('input', throttle((e) => {
+      console.log('input', e.target.value)
+    }, 500))
+  </script>
+</body>
+</html>

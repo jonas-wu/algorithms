@@ -1,5 +1,5 @@
 // 广度优先查找
-import { dfs as arr, Node } from './data'
+import { data as arr, Node } from './data'
 
 function bfs(arr: Node[], targetId: number) {
   const queue = [...arr]
@@ -12,18 +12,13 @@ function bfs(arr: Node[], targetId: number) {
     }
 
     if (cur.children) {
-      queue.push(...cur.children.map(x => {
-        return {
-          ...x,
-          path: (cur.path || cur.id) + '->' + x.id,
-        }
-      }))
+      queue.push(...cur.children)
     }
   }
 
   return undefined
 }
 
-const ret = bfs(arr, 112)
+const ret = bfs(arr, 1121)
 
 console.log(ret)

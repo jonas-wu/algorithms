@@ -4,7 +4,7 @@ export interface Node {
   path?: string;
 }
 
-const dfsData: Node[] = [{
+const data: Node[] = [{
   id: 1,
   children: [{
     id: 11,
@@ -27,4 +27,4 @@ const dfsData: Node[] = [{
     }]
 },];
 
-export {dfsData as dfs}
+export {data}
